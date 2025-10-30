@@ -1,0 +1,117 @@
+.contact-cards {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-cards .card {
+    align-items: center;
+    border:2px solid #0746be0f;
+    padding: 50px;
+    transition: 500ms;
+    margin: 5px;
+    cursor: pointer;
+    font-family: var(--t-secondary-font);
+    color: #9ca3a9;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 31%;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+.contact-cards .card a {
+    text-decoration: none;
+    color: #9ca3a9;
+}
+.contact-cards .card a:hover {
+    color: #1a1b1c;
+}
+.contact-cards .card:hover {
+    box-shadow: 2px 2px 8px 2px #9ca3a9;;
+}
+
+.contact-section {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contact-section .contact-info{
+    width: 48%;
+}
+.contact-section .contact-form{
+    width: 52%;
+}
+.contact-section .contact-info h1{
+    font-family: var(--t-primary-font);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.contact-section .contact-info p:nth-of-type(1) {
+    font-family: var(--t-secondary-font);
+    font-size: 72px;
+}
+.contact-section .contact-info p:nth-of-type(2) {
+    font-family: var(--t-secondary-font);
+    font-size: 1rem;
+    color: #9ca3a9;
+    letter-spacing: 2px;
+}
+.contact-section .contact-info p:nth-of-type(3) {
+    font-family: var(--t-secondary-font);
+    font-size: 1.2rem;
+    color: var(--t-primary-color);
+    letter-spacing: 2px;
+}
+.contact-section .contact-info p:nth-of-type(2) a{
+    text-decoration: none;
+    color: #9ca3a9;
+}
+/* .contact-section .contact-info .social-links a:hover{
+    color: #0746be0f;
+} */
+.social-links i {
+    font-size: 36px;
+    color:#9ca3a9;
+}
+
+i.fa-brands:hover {
+    color: #1a1b1c;
+}
+form input, textarea{
+    font-family: var(--t-primary-font);
+    font-size: 1rem;
+    border: 2px solid transparent;
+    background-color: #f5f5f5;
+    transform: 500ms;
+    transition: border-color 0.5s ease; 
+}
+form .input-group {
+    width: 100%;
+}
+form .input-group input{
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+form .input-group textarea{
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+form .input-group-multiple {
+    display: flex;
+}
+form .input-group-multiple .input-group.last{
+    margin-left: 5px;
+}
+input:hover, textarea:hover {
+    border-bottom-color: var(--t-primary-color);
+}
+input:focus, textarea:focus {
+    outline: none;
+}
+.google-map iframe {
+    width: 100%;
+}

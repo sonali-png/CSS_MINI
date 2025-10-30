@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=League+Gothic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    /* grid-template-column: repeat(2, 1fr); */
+}
+:root {
+    --t-primary-color: #00a5b2;
+    --t-primary-font:"Didact Gothic", sans-serif ;
+    --t-secondary-font:"League Gothic", sans-serif;
+}
+.t-container {
+    width: 100%;
+}
+h1 {
+    font-family: var(--t-primary-font);
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+h2 {
+    font-family: var(--t-primary-font);
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+h3 {
+    font-family: var(--t-secondary-font);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9ca3a9;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+button {
+    text-transform: uppercase;
+    padding: 20px;
+    letter-spacing: 1px;
+    background:transparent;
+    transition: 500ms;
+    cursor: pointer;
+    color: var(--t-primary-color);
+    font-family: var(--t-primary-font);
+    border: 2px solid var(--t-primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+button:hover {
+    background-color:#f5f5f5;
+    color:var(--t-primary-color);
+}
+button.button-primary-bg {
+    background-color: #00a5b2;
+    color: #f5f5f5;
+    padding: 23px;
+}
+button.button-primary-bg:hover {
+    color: #00a5b2;
+    background-color: #f5f5f5;
+}
+.center-aligned {
+    display: block;
+    margin: 0 auto;
+}
+.ml-43 {
+    margin-left: 43%;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-60 {
+    margin-top: 60px;
+}
+.mt-80 {
+    margin-top: 80px;
+}
+.pt-40 {
+    padding-top: 40px;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.t-banner {
+    width: 100%;
+    height:500px;
+    position: relative;
+}
+.t-about {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-family: var(--t-primary-font);
+    font-weight: 800;
+    font-size: 18px;
+    color: #f5f5f5;
+    font-style: italic;
+}
+.bg-std {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar-container {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+}
+
+.menu-toggle {
+    display: none;
+}
+.menu-icon {
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+}
+.menu {
+    display: flex;
+    margin-top: 20px;
+}
+.menu .menu-item {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.menu .menu-item a {
+    font-family: var(--t-primary-font);
+    text-decoration: none;
+    color: #1a1b1c;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    text-transform: uppercase; 
+}
+
+.menu .menu-item a::before {
+    content: "•";
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    margin-right: 5px;
+}
+.menu .menu-item a:hover::before {
+    opacity: 1;
+}
+.menu .menu-item a:hover {
+    color: var(--t-primary-color);
+}
+.m-content {
+    display: none;
+}
+.para{
+    font-family: var(--t-primary-font);
+    font-size: 16px;
+    padding: 0 17%;
+    font-weight: 400;
+    text-align: justify;
+    color: #1a1b1c;
+}
+
+.description400{
+    font-family: var(--t-primary-font);
+    font-size: 22px;
+    padding: 0 30%;
+    font-weight: 400;
+    text-align: center;
+    color: #1a1b1c;
+}
+.description600{
+    font-family: var(--t-primary-font);
+    font-size: 1.5rem;
+    padding: 0 30%;
+    font-weight: 600;
+    text-align: center;
+    color: #f5f5f5;
+}
+.seperator {
+    width: 80px;    
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    background-color: #1a1b1c;
+    margin-left: auto;
+    margin-right: auto;
+}
+.seperator-small-dark {
+    width: 60px;    
+    height: 2px;
+    margin-top: 40px;
+    margin-bottom: 22px;
+    background-color: #1a1b1c;
+    margin-left: auto;
+    margin-right: auto;
+}
+.seperator-lightgrey {
+    width: 80px;    
+    height: 2px;
+    margin-top: 40px;
+    margin-bottom: 22px;
+    background-color: #f5f5f5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.t-section {
+    margin-top: 80px;
+}
+.t-popular-destinations {
+    padding-bottom: 80px;
+    height: 700px;
+}
+.t-heading {
+    font-family: var(--t-secondary-font);
+    text-decoration: none;
+    color: #1a1b1c;
+    font-weight: 600;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.t-travel-form {
+    display: table;
+    font-family: var(--t-primary-font);
+    background-color: #fff;;
+    padding: 20px;
+    position: absolute;
+    width: 80%;
+    bottom: -15%;
+    margin-left: 10%;
+    box-shadow: 2px 2px 5px #f5f5f5, -2px -2px 5px #faf7f7;
+}
+.travel-form-inputs {
+    display: table-row;
+}
+.t-travel-form .input-col {
+    display: table-cell;
+    padding: 5px;
+}
+.t-travel-form .input-col input[type="text"] {
+    outline: none;
+    border: none;
+    background-color: #faf7f7;
+    color: #1a1b1c;
+    font-family: var(--t-primary-font);
+}
+.t-travel-form input{
+    padding: 20px 20px 20px 35px;
+    font-size: 1rem;
+    width: 100%;
+}
+.t-travel-form button {
+    padding: 18px;
+    font-size: 1rem;
+    width: 100%;
+} 
+    
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #555;
+  font-size: 16px;
+}
+
+
+
+
+
+.t-popular-tours {
+    margin-top: 12%;
+}
+.t-content {
+    margin-top: 40px;
+}
+.t-tours-details {
+    display: flex;
+}
+.t-tours-details-card {
+    margin: 10px;
+    width: 32%;
+}
+.t-tours-details-card img {
+    width: 100%;
+    cursor: pointer;
+}
+.t-tours-details .t-tour-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.t-tours-details .one {
+    display: flex;
+    justify-content: space-between;
+}
+.t-tours-details .one h2 {
+    color: var(--t-primary-color);
+}
+.t-tours-details .two {
+    display: flex;
+}
+.t-tours-details .two i{
+    font-size: 0.8rem;
+    color: #9ca3a9;
+    margin-right: 5px;
+}
+.paragraph {
+    font-family: var(--t-primary-font);
+    margin-bottom: 10px;
+}
+.t-trending-destinations .description400{
+    padding: 0 30%;
+}
+.t-destinations-list {
+    display: flex;
+    justify-content: space-between;
+}
+.t-destinations-list .back-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;  
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.t-destinations-list .back-img span h3 {
+    font-family: var(--t-primary-font);
+    color: #f5f5f5;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 45%;
+}
+.t-destinations-list .back-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;  
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+.t-destinations-list .back-img:hover{
+    box-shadow: 2px 2px 5px rgba(26, 27, 28, 0.3), -2px -2px 5px rgba(245, 245, 245, 0.2);
+}
+.t-trending-destinations .back-img1 {
+    background-image: url('../images/gujarat.jpg');
+}
+.t-trending-destinations .back-img2 {
+    background-image: url('../images/chennai.jpg');
+}
+.t-trending-destinations .back-img3 {
+    background-image: url('../images/mumbai.jpg');
+}
+.t-trending-destinations .back-img4 {
+    background-image: url('../images/haydrabad.jpg');
+}
+.t-trending-destinations .back-img5 {
+    background-image: url('../images/madhypradesh.jpg');
+}
+.t-trending-destinations .back-img6 {
+    background-image: url('../images/rajasthan.jpg');
+}
+.t-home-blogs-list {
+    display: flex;
+    justify-content: space-between;
+}
+.t-home-blogs-list .t-home-blog {
+    width: 32%;
+}
+.t-home-blogs-list img{
+    width: 100%;
+}
+.t-home-blogs-list span.time{
+    color: #9ca3a9;
+    font-family: var(--t-primary-font);
+}
+.t-home-blogs-list .t-home-blog-info {
+    margin-top: 40px;
+}
+span.tag-box h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 130px;
+    text-align: center;
+    font-size: 0.6rem;
+    font-family: var(--t-primary-font);
+    font-weight: 600;
+    color: #f5f5f5;
+    text-transform: uppercase;
+}
+.t-home-blogs-list .adventure {
+    background-color: #7ad562;
+}
+.t-home-blogs-list .business {
+    background-color: #fda45d;
+}
+.t-home-blogs-list .holidays {
+    background-color: #c3f3f5;
+}
+
+.t-home-blog-with-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+}
+.t-tours-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+.image-to-scale img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.image-to-scale:hover img {
+  transform: scale(1.1);
+}
+footer {
+    background-color:#0746be0f;
+}
+.footer-container .footer-section-main{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--t-primary-font);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.footer-container .footer-section {
+    line-height: 2;
+}
+
+.footer-container .footer-section .info-head {
+    color: #1a1b1c;
+    font-weight: 600;
+}
+.footer-container .footer-section .footer-menus a {
+    text-decoration: none;
+    color: #1a1b1c;
+    font-weight: 400;
+}
+.footer-copyright {
+    border-top: 1px solid grey;
+    padding-top: 30px;
+    font-family: var(--t-primary-font);
+    display: flex;
+}
+.footer-copyright .logo {
+    padding-right: 10px;
+}
+.footer-copyright .logo img{
+    width: 40px;
+}
